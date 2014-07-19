@@ -1,0 +1,4 @@
+Redirect /authenticate/atlas /
+Redirect /disconnect /logout.php
+DirectoryIndex auth.html
+Options -Indexes
