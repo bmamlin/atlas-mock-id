@@ -11,10 +11,16 @@ $users = array(
 		"user_name" => "Burke",
 		"password" => "mamlin"),
 
-	"alexis.duque " => array(
+	"alexis.duque" => array(
 		"uid" => "alexis.duque",
 		"user_email" => "alexis.duque@openmrs.org",
 		"user_name" => "Alexis",
-		"password" => "duque")
+		"password" => "duque"),
+
+	"user" => array(
+			"uid" => "user",
+			"user_email" => "user@openmrs.org",
+			"user_name" => "OpenMRS User",
+			"password" => "user")
 	);
 ?>
