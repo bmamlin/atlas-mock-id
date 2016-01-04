@@ -1,6 +1,6 @@
 <?php
 
-$redirect_url = "https://atlas.local/";
+$redirect_url = "http://openmrsatlas.local/";
 $site_key = "localhost";
 $api_key = "1234567890abcdef";
 
