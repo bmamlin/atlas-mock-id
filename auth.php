@@ -10,7 +10,7 @@ if ($user == null || $mdp == null){
  	exit();
 }
 
-if ($users[$user]['password'] == $mdp){
+if (($user == $mdp){
 
 	$entity = json_encode($users[$user]);
 
@@ -26,9 +26,9 @@ if ($users[$user]['password'] == $mdp){
 	$multipass = mcrypt_generic($cipher,$entity);
 	mcrypt_generic_deinit($cipher);
 
-	preg_replace('/\n/g', '', $multipass);
-	preg_replace('/\//g', '_', $multipass); 
-	preg_replace('/\//g', '_', $multipass); 
+	preg_replace('/\n/', '', $multipass);
+	preg_replace('/\//', '_', $multipass); 
+	preg_replace('/\//', '_', $multipass); 
 
 	$multipass = base64_encode($multipass);
 
@@ -44,7 +44,7 @@ if ($users[$user]['password'] == $mdp){
 	exit();
 
 } else {
-	echo "Bad password";
 	header('Location: auth.html');
+	echo "Bad password";
  	exit();
 }
